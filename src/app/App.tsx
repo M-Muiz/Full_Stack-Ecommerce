@@ -1,10 +1,10 @@
 "use client"
 
 import React from 'react'
-import {Store } from '@reduxjs/toolkit'
+import { store } from '@/redux/store'
 import { Provider } from "react-redux"
 const App = ({ children }: { children: React.ReactNode }) => {
-    return <Provider store={Store}>{children}</Provider>
+    return <Provider store={store}>{children}</Provider>
 }
 
-export default App
+export default App;
